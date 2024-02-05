@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plaček</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-T1SOx7kjJFLsbUojLwnmJSaKJKakExTgFV5E5P4QY6+eZjJDAzuLBkW5l1f2F00D"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="container text-center">
+          <h1><strong>Mage Hyglas</strong></h1>
+          <h2 class="">Hotel</h2>
+        </div>
+      </header>
+      <div class="container text-center">
+        <form action="">
+          <h3>Quick booking</h3>
+          <div class="row">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Johny"
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="surname" class="form-label">Surname:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="surname"
+                  placeholder="English"
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="johnnyenglish@example.com"
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="phone" class="form-label"
+                  >Phone number:
+                  <small class="text-body-secondary"
+                    >(incl. international dial-up preference)</small
+                  ></label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="phone"
+                  placeholder="+421606123456"
+                />
+              </div>
+            </div>
+
+            <div class="container-bottom">
+              <div class="row">
+                <div class="col-4">
+                  <div class="mb-3">
+                    <label for="guests" class="form-label"
+                      >Number of guests:
+                    </label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="guests"
+                      placeholder="1"
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="mb-3">
+                    <label for="arrival" class="form-label"
+                      >Date of arrival:
+                    </label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="arrival"
+                      placeholder="+421606123456"
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="mb-3">
+                    <label for="departure" class="form-label"
+                      >Date of departure</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="departure"
+                      placeholder="+421606123456"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <button type="submit" class="btn btn-secondary mb-3">
+                    Book now
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Virtual tour
+                  </button>
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" style="z-index: 5">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <iframe
+                            width="460"
+                            height="315"
+                            src="https://www.youtube.com/embed/L1_c_4NQrtE?si=JshWPjx7QoWBdgbI"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                            style="z-index: 3"
+                          ></iframe>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <footer class="fixed-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="">Hyglas</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="history.html">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+    </main>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+      document.querySelectorAll(".modal").forEach(function (modal) {
+        modal.addEventListener("hide.bs.modal", function () {
+          const memory = this.innerHTML;
+          this.innerHTML = memory;
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const collapseNavbar = function () {
+          if (window.innerWidth < 992) {
+            const bsCollapse = new bootstrap.Collapse(
+              navbarToggler.nextElementSibling,
+              {
+                toggle: false,
+              }
+            );
+            bsCollapse.toggle();
+          }
+        };
+
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", collapseNavbar);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$primary: rgb(128, 27, 27);
+$secondary: rgb(255, 192, 19);
+
+@import "../webBootstrap/node_modules/bootstrap/scss/bootstrap";
+// Then add additional custom code here
+* {
+  font-family: "MedievalSharp", cursive;
+}
+body {
+  background-color: rgb(74, 44, 3);
+}
+main {
+  background-image: url(photos/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+header {
+  padding-top: 70px;
+}
+a {
+  width: 220px;
+}
+h1 {
+  font-size: 4em;
+  color: white;
+}
+h2 {
+  font-size: 3em;
+  color: $primary;
+}
+h3 {
+  text-align: center;
+  color: white;
+  margin: 30px auto;
+  font-size: 2em;
+}
+h5 {
+  z-index: 2;
+}
+p {
+  color: white;
+}
+
+.carousel-indicators {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-size: auto;
+  padding-top: 50px;
+  width: auto;
+  z-index: 1;
+}
+form {
+  width: 700px;
+  height: 550px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 auto;
+}
+nav {
+  text-align: right;
+}
+.container-history {
+  width: auto;
+  height: auto;
+  background-color: grey;
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 80px auto;
+}
+.pricingBody {
+  margin-top: 80px;
+}
+i {
+  width: 80px;
+  height: 80px;
+}
